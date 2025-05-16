@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Monitoramento - Metrics Observer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      background-color: #fff;
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #0078D7;
+    }
+    .status {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #e6f7ff;
+      border-left: 5px solid #0078D7;
+    }
+    .timestamp {
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Metrics Observer</h1>
+    <p>Painel técnico de monitoramento contínuo em nuvem.</p>
+
+    <div class="status">
+      <strong>Status da aplicação:</strong> Ativa e online
+      <div class="timestamp">Última verificação: <span id="time"></span></div>
+    </div>
+  </div>
+
+  <script>
+    const now = new Date();
+    document.getElementById('time').textContent = now.toLocaleString('pt-BR');
+  </script>
+</body>
+</html>
